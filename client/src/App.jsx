@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import AuthenticatedApp from "./pages/AuthenticatedApp";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  
-
   return (
-    <>
-      <h1 className='text-center bg-slate-400'>Flower Shop</h1>
-    </>
-  )
+    <div>
+      <BrowserRouter>
+        <AuthenticatedApp />
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
