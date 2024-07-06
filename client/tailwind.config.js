@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        menubar: "rgba(248,250,252,0.6)",
+      },
+    },
   },
   plugins: [],
 }
